@@ -4,14 +4,23 @@
     <meta charset="utf-8">
     <title>Answer 2</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style media="screen">
+    .load {
+      color : red;
+    }
+    </style>
     <script>
       $(document).ready(function(){
-        $("#test").addClass("load");
+        $("#ans2").click(function(){
+          $("#test").addClass("load");
+        });
       });
+
     </script>
   </head>
   <body>
     <p>Question 2: Select a ID name "#test" and add class "load" when DOM is loaded</p>
     <p id="test"><i>Object to add class.</i></p>
+    <button type="button" name="button" id="ans2">Click me load class</button>
   </body>
 </html>
