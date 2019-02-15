@@ -9,10 +9,16 @@
         $("div").on("click",function(){alert("You clicked on a parent element")}).children().on("click",function(){return false;});
       });
     </script>
+
+    <style>
+    .hi {
+      color : orangered;
+    }
+    </style>
   </head>
   <body>
     <p>Question 12: We have bind a click function to parent div but we want to stop it from performing when user clicks on its child li</p>
-    <div>Parent div<br>
+    <div class="hi">Parent div and click it to see change<br>
       <ul>
  	      <li>Child 1</li>
  	      <li>Child 2</li>
